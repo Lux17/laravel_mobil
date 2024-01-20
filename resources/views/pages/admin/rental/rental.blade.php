@@ -53,7 +53,9 @@
                 <label for="rentalName">Biaya</label>:</label>
                 <input type="text" class="form-control" id="rentalName" name="biaya" required>
             
-            <button type="submit"  class="btn btn-primary" >Tambah Rental</button>
+            <button type="submit"  class="btn btn-primary mb-4" >Tambah Rental</button>
+            <br>
+            <a href="{{route('cetak_pdf')}}" class="btn btn-primary" ><i class="bi bi-download"></i></a>
         </form>
 
 

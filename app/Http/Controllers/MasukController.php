@@ -53,7 +53,7 @@ class MasukController extends Controller
         } else {
 
             // Jika validasi gagal, kembalikan ke halaman login dengan pesan error
-            return redirect()->back()->withInput($request->only('username'))->with('error', 'Login gagal! Cek kembali username dan password Anda.');
+            return redirect()->back()->withInput($request->only('email'))->with('error', 'Login gagal! Cek kembali email dan password Anda.');
         }
     }
 

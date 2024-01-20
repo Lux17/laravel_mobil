@@ -52,9 +52,11 @@ Route::put('/update_mobil/{id}', 'App\Http\Controllers\MobilController@update_mo
 
 //crud Rental
 Route::get('/rental', [RentalController::class, 'index'])->name('rental');
+Route::get('/rental/cetak_pdf', [RentalController::class, 'cetak_pdf'])->name('cetak_pdf');
 Route::delete('/hapus_rental/{id}', 'App\Http\Controllers\RentalController@hapus_rental')->name('hapus_rental');
 Route::post('/rental/simpan_rental', 'App\Http\Controllers\RentalController@simpan_rental');
 Route::put('/update_rental/{id}', 'App\Http\Controllers\RentalController@update_rental')->name('update_rental');
+
 
 Route::put('/brand/update', 'App\Http\Controllers\BrandController@store')->name('brand.store');
 // Route::resource('brand', 'BrandController');

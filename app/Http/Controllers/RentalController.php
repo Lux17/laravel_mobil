@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Rental;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use PDF;
 class RentalController extends Controller
 {
     
@@ -120,5 +121,13 @@ class RentalController extends Controller
         $mobil = DB::table('mobils')->get();
         return view('pages.admin.rental.rental', ['rental' => $rental, 'mobil' => $mobil]);
         
+    }
+
+    public function cetak_pdf()
+    {
+        $rental = DB::table('rentals')->get();
+        $mobil = DB::table('mobils')->get();
+        $pdf = Pdf::loadView('pages.admin.rental.rental_pdf', ['rental' => $rental, 'mobil' => $mobil]);
+    	return $pdf->download('laporan-rental.pdf');
     }
 }

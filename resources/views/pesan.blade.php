@@ -91,9 +91,10 @@
             <label for="returnDate">Return Date:</label>
             <input type="date" id="returnDate" name="sampai_tanggal_sewa" required>
 
-            <label for="email">Harga:</label>
-            <input type="text" id="harga" name="biaya" value="Rp.{{$car->harga}}" required>
-
+            <label for="biaya">Harga sewa /12Jam</label>
+            <select id="biaya" name="biaya" required>
+                <option value="{{$car->harga}}">{{$car->harga}}</option>
+            </select>
             <button type="submit" >Pesan</button>
             @endforeach
         </form>

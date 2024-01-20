@@ -1,11 +1,23 @@
- <!-- Vendor JS Files -->
- 
- <script src="{{ asset('masuk/assets/vendor/aos/aos.js') }}"></script>
- <script src="{{ asset('masuk/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
- <script src="{{ asset('masuk/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
- <script src="{{ asset('masuk/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
- <script src="{{ asset('masuk/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
- <script src="{{ asset('masuk/assets/vendor/php-email-form/validate.js') }}"></script>
 
- <!-- Template Main JS File -->
- <script src="{{ asset('masuk/assets/js/main.js') }}"></script>
+  <!-- plugins:js -->
+  <script src=" {{ asset('login/vendors/base/vendor.bundle.base.js') }}"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+ 
+  <script src=" {{ asset('login/vendors/chart.js/Chart.min.js') }}"></script>
+  <script src=" {{ asset('login/vendors/datatables.net/jquery.dataTables.js') }}"></script>
+  <script src=" {{ asset('login/vendors/datatables.net-bs4/dataTables.bootstrap4.js') }}"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src=" {{ asset('login/js/off-canvas.js') }}"></script>
+  <script src=" {{ asset('login/js/hoverable-collapse.js') }}"></script>
+  <script src=" {{ asset('login/js/template.js') }}"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src=" {{ asset('login/js/dashboard.js') }}"></script>
+  <script src=" {{ asset('login/js/data-table.js') }}"></script>
+  <script src=" {{ asset('login/js/jquery.dataTables.js') }}"></script>
+  <script src=" {{ asset('login/js/dataTables.bootstrap4.js') }}"></script>
+  <!-- End custom js for this page-->
+
+  <script src=" {{ asset('login/js/jquery.cookie.js') }}" type="text/javascript"></script>
